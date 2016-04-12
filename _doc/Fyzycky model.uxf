@@ -35,12 +35,9 @@ fontsize=10
     </coordinates>
     <panel_attributes>cargo Card
 --
-
 FK:CommodityID: int
 FK:ShipID: int
-NumberOfUnits: int
-FK: AcquiredAtDockID: int
-FK: LiquifedAtDockID: int</panel_attributes>
+NumberOfUnits: int</panel_attributes>
     <additional_attributes/>
   </element>
   <element>

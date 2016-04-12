@@ -47,6 +47,7 @@
             this.button8 = new System.Windows.Forms.Button();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.button13 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
@@ -59,7 +60,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -121,6 +122,7 @@
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.label9);
             this.panel2.Controls.Add(this.numericUpDown1);
             this.panel2.Controls.Add(this.button12);
@@ -159,6 +161,11 @@
             // 
             this.numericUpDown1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.numericUpDown1.Location = new System.Drawing.Point(195, 100);
+            this.numericUpDown1.Maximum = new decimal(new int[] {
+            1000000000,
+            0,
+            0,
+            0});
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(209, 20);
             this.numericUpDown1.TabIndex = 19;
@@ -296,6 +303,15 @@
             this.panel3.TabIndex = 2;
             this.panel3.Visible = false;
             // 
+            // button13
+            // 
+            this.button13.Location = new System.Drawing.Point(211, 99);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(189, 55);
+            this.button13.TabIndex = 4;
+            this.button13.Text = "Scrap current ship";
+            this.button13.UseVisualStyleBackColor = true;
+            // 
             // button11
             // 
             this.button11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -420,14 +436,14 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button13
+            // label6
             // 
-            this.button13.Location = new System.Drawing.Point(211, 99);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(189, 55);
-            this.button13.TabIndex = 4;
-            this.button13.Text = "Scrap current ship";
-            this.button13.UseVisualStyleBackColor = true;
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(145, 61);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(71, 13);
+            this.label6.TabIndex = 21;
+            this.label6.Text = "docked since";
             // 
             // Form2
             // 
@@ -488,5 +504,6 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.Label label6;
     }
 }

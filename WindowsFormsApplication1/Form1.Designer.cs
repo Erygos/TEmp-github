@@ -52,7 +52,6 @@
             this.button8 = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.button11 = new System.Windows.Forms.Button();
-            this.textBox7 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -61,7 +60,6 @@
             this.button9 = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label18 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
             this.button13 = new System.Windows.Forms.Button();
             this.comboBox8 = new System.Windows.Forms.ComboBox();
             this.label19 = new System.Windows.Forms.Label();
@@ -81,6 +79,11 @@
             this.button4 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.button2 = new System.Windows.Forms.Button();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
+            this.button17 = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -88,6 +91,8 @@
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -344,8 +349,8 @@
             // panel4
             // 
             this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel4.Controls.Add(this.numericUpDown2);
             this.panel4.Controls.Add(this.button11);
-            this.panel4.Controls.Add(this.textBox7);
             this.panel4.Controls.Add(this.label9);
             this.panel4.Controls.Add(this.label10);
             this.panel4.Controls.Add(this.label11);
@@ -368,14 +373,6 @@
             this.button11.Text = "Cancel";
             this.button11.UseVisualStyleBackColor = true;
             this.button11.Click += new System.EventHandler(this.button11_Click);
-            // 
-            // textBox7
-            // 
-            this.textBox7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox7.Location = new System.Drawing.Point(86, 61);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(244, 20);
-            this.textBox7.TabIndex = 6;
             // 
             // label9
             // 
@@ -440,8 +437,8 @@
             // panel5
             // 
             this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel5.Controls.Add(this.numericUpDown1);
             this.panel5.Controls.Add(this.label18);
-            this.panel5.Controls.Add(this.textBox9);
             this.panel5.Controls.Add(this.button13);
             this.panel5.Controls.Add(this.comboBox8);
             this.panel5.Controls.Add(this.label19);
@@ -463,14 +460,6 @@
             this.label18.Size = new System.Drawing.Size(52, 13);
             this.label18.TabIndex = 11;
             this.label18.Text = "Unit price";
-            // 
-            // textBox9
-            // 
-            this.textBox9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox9.Location = new System.Drawing.Point(86, 65);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(244, 20);
-            this.textBox9.TabIndex = 10;
             // 
             // button13
             // 
@@ -537,6 +526,9 @@
             // panel6
             // 
             this.panel6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel6.Controls.Add(this.comboBox4);
+            this.panel6.Controls.Add(this.label8);
+            this.panel6.Controls.Add(this.button17);
             this.panel6.Controls.Add(this.button10);
             this.panel6.Controls.Add(this.label22);
             this.panel6.Controls.Add(this.label23);
@@ -552,11 +544,11 @@
             // button10
             // 
             this.button10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button10.Location = new System.Drawing.Point(7, 218);
+            this.button10.Location = new System.Drawing.Point(7, 216);
             this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(156, 70);
+            this.button10.Size = new System.Drawing.Size(323, 70);
             this.button10.TabIndex = 5;
-            this.button10.Text = "Cancel";
+            this.button10.Text = "Done editing";
             this.button10.UseVisualStyleBackColor = true;
             this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
@@ -583,7 +575,7 @@
             // textBox13
             // 
             this.textBox13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox13.Location = new System.Drawing.Point(86, 30);
+            this.textBox13.Location = new System.Drawing.Point(89, 129);
             this.textBox13.Name = "textBox13";
             this.textBox13.Size = new System.Drawing.Size(244, 20);
             this.textBox13.TabIndex = 2;
@@ -600,9 +592,9 @@
             // button15
             // 
             this.button15.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button15.Location = new System.Drawing.Point(163, 218);
+            this.button15.Location = new System.Drawing.Point(10, 53);
             this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(167, 70);
+            this.button15.Size = new System.Drawing.Size(323, 70);
             this.button15.TabIndex = 0;
             this.button15.Text = "Add new comodity";
             this.button15.UseVisualStyleBackColor = true;
@@ -628,7 +620,7 @@
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(124, 47);
             this.button6.TabIndex = 6;
-            this.button6.Text = "Add new comodity to market\r\n--disabled--\r\n";
+            this.button6.Text = "Add new comodity to market\r\n";
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
@@ -640,7 +632,7 @@
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(124, 55);
             this.button5.TabIndex = 5;
-            this.button5.Text = "Register commodities to docks\r\n--disabled--";
+            this.button5.Text = "Register commodities to docks\r\n";
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
@@ -680,6 +672,58 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Location = new System.Drawing.Point(86, 62);
+            this.numericUpDown1.Maximum = new decimal(new int[] {
+            1000000000,
+            0,
+            0,
+            0});
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(244, 20);
+            this.numericUpDown1.TabIndex = 13;
+            // 
+            // numericUpDown2
+            // 
+            this.numericUpDown2.Location = new System.Drawing.Point(86, 56);
+            this.numericUpDown2.Maximum = new decimal(new int[] {
+            1000000000,
+            0,
+            0,
+            0});
+            this.numericUpDown2.Name = "numericUpDown2";
+            this.numericUpDown2.Size = new System.Drawing.Size(244, 20);
+            this.numericUpDown2.TabIndex = 7;
+            // 
+            // button17
+            // 
+            this.button17.Location = new System.Drawing.Point(7, 152);
+            this.button17.Name = "button17";
+            this.button17.Size = new System.Drawing.Size(323, 61);
+            this.button17.TabIndex = 6;
+            this.button17.Text = "Add new commodity category";
+            this.button17.UseVisualStyleBackColor = true;
+            this.button17.Click += new System.EventHandler(this.button17_Click);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(10, 132);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(73, 13);
+            this.label8.TabIndex = 7;
+            this.label8.Text = "New category";
+            // 
+            // comboBox4
+            // 
+            this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox4.FormattingEnabled = true;
+            this.comboBox4.Location = new System.Drawing.Point(86, 29);
+            this.comboBox4.Name = "comboBox4";
+            this.comboBox4.Size = new System.Drawing.Size(244, 21);
+            this.comboBox4.TabIndex = 8;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -701,6 +745,8 @@
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -734,7 +780,6 @@
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
@@ -748,7 +793,6 @@
         private System.Windows.Forms.Button button15;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.Button button13;
         private System.Windows.Forms.ComboBox comboBox8;
         private System.Windows.Forms.Label label19;
@@ -760,6 +804,11 @@
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Button button16;
         private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown numericUpDown2;
+        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button button17;
     }
 }
 
